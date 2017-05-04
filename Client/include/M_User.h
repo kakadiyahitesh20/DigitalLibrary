@@ -21,6 +21,8 @@ public:
     void ipaddress(char*);
     string const send2Server(string);
     void DisplayUserdump(M_User&,int);
+    void DisplayUsers();
+    void modifyUser();
     friend class boost::serialization::access;
 
     template<typename Archive>

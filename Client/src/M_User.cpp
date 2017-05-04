@@ -70,3 +70,53 @@ void M_User::deleteUser() {
     string res=delete_User.send2Server(output);
     cout<<"Server->"<<res<<endl;
 }
+void M_User::modifyUser() {
+        try {
+                stringstream ss;
+                M_User modify_User;
+                cout << "------------Modify User------------" << std::endl;
+                cin.ignore();
+                cout<<"Please enter username to modify:"<<endl;
+                getline(cin,modify_User.uname);
+                cout << "Enter First Name:" << std::endl;
+                getline(cin,modify_User.name);
+                cout << "Enter User Email:" << std::endl;
+                getline(cin,modify_User.email);
+                cout << "Enter Phone Number:" << endl;
+                getline(cin,modify_User.phone);
+                boost::archive::text_oarchive oa{ss};
+                oa << modify_User;
+                string output = "3|" + ss.str();
+                string res=modify_User.send2Server(output);
+                cout<<"Server->"<<res<<endl;
+
+        }
+        catch (exception const &e)
+        {
+                cerr << e.what() << endl;
+        }
+
+}
+
+void M_User::DisplayUsers() {
+        try {
+                stringstream ss;
+                M_User DispUsers;
+                boost::archive::text_oarchive oa{ss};
+                oa << DispUsers;
+                string output = "2|" + ss.str();
+                string res=DispUsers.send2Server(output);
+                std::stringstream ss1;
+                ss1 << res;
+                boost::archive::text_iarchive oa1{ss1};
+                oa1 & userData;
+
+                for(int i=0;i<userData.size();i++)
+                        DisplayUserdump(userData[i],i);
+
+        }
+        catch (exception const &e)
+        {
+                cerr << e.what() << endl;
+        }
+}
