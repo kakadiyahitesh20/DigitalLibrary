@@ -1,0 +1,8 @@
+"C:\Program Files (x86)\JetBrains\CLion 2016.3.5\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\DigiLib\Client
+-- Boost version: 1.62.0
+-- Found the following Boost libraries:
+--   system
+--   serialization
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/DigiLib/Client/cmake-build-debug
