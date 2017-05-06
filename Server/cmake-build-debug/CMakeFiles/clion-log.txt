@@ -1,0 +1,35 @@
+"C:\Program Files (x86)\JetBrains\CLion 2016.3.5\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\DigiLib\Server
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:983 ] _boost_TEST_VERSIONS = 1.62.0;1.62;1.61.0;1.61;1.60.0;1.60;1.59.0;1.59;1.58.0;1.58;1.57.0;1.57;1.56.0;1.56;1.55.0;1.55;1.54.0;1.54;1.53.0;1.53;1.52.0;1.52;1.51.0;1.51;1.50.0;1.50;1.49.0;1.49;1.48.0;1.48;1.47.0;1.47;1.46.1;1.46.0;1.46;1.45.0;1.45;1.44.0;1.44;1.43.0;1.43;1.42.0;1.42;1.41.0;1.41;1.40.0;1.40;1.39.0;1.39;1.38.0;1.38;1.37.0;1.37;1.36.1;1.36.0;1.36;1.35.1;1.35.0;1.35;1.34.1;1.34.0;1.34;1.33.1;1.33.0;1.33
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:985 ] Boost_USE_MULTITHREADED = TRUE
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:987 ] Boost_USE_STATIC_LIBS = 
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:989 ] Boost_USE_STATIC_RUNTIME = 
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:991 ] Boost_ADDITIONAL_VERSIONS = 
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:993 ] Boost_NO_SYSTEM_PATHS = 
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1061 ] Declared as CMake or Environmental Variables:
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1063 ]   BOOST_ROOT = C:/boost_1.62/
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1065 ]   BOOST_INCLUDEDIR = 
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1067 ]   BOOST_LIBRARYDIR = 
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1069 ] _boost_TEST_VERSIONS = 1.62.0;1.62;1.61.0;1.61;1.60.0;1.60;1.59.0;1.59;1.58.0;1.58;1.57.0;1.57;1.56.0;1.56;1.55.0;1.55;1.54.0;1.54;1.53.0;1.53;1.52.0;1.52;1.51.0;1.51;1.50.0;1.50;1.49.0;1.49;1.48.0;1.48;1.47.0;1.47;1.46.1;1.46.0;1.46;1.45.0;1.45;1.44.0;1.44;1.43.0;1.43;1.42.0;1.42;1.41.0;1.41;1.40.0;1.40;1.39.0;1.39;1.38.0;1.38;1.37.0;1.37;1.36.1;1.36.0;1.36;1.35.1;1.35.0;1.35;1.34.1;1.34.0;1.34;1.33.1;1.33.0;1.33
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1162 ] location of version.hpp: C:/boost_1.62/include/boost-1_62/boost/version.hpp
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1186 ] version.hpp reveals boost 1.62.0
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1272 ] guessed _boost_COMPILER = -mgw53
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1282 ] _boost_MULTITHREADED = -mt
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1326 ] _boost_RELEASE_ABI_TAG = -
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1328 ] _boost_DEBUG_ABI_TAG = -d
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1384 ] _boost_LIBRARY_SEARCH_DIRS_RELEASE = C:/boost_1.62/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH_boost_LIBRARY_SEARCH_DIRS_DEBUG   = C:/boost_1.62/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1523 ] Searching for SYSTEM_LIBRARY_RELEASE: boost_system-mgw53-mt-1_62;boost_system-mgw53-mt;boost_system-mt-1_62;boost_system-mt;boost_system
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:362 ]  Boost_LIBRARY_DIR_RELEASE = C:/boost_1.62/lib _boost_LIBRARY_SEARCH_DIRS_RELEASE = C:/boost_1.62/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1565 ] Searching for SYSTEM_LIBRARY_DEBUG: boost_system-mgw53-mt-d-1_62;boost_system-mgw53-mt-d;boost_system-mt-d-1_62;boost_system-mt-d;boost_system-mt;boost_system
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:362 ]  Boost_LIBRARY_DIR_DEBUG = C:/boost_1.62/lib _boost_LIBRARY_SEARCH_DIRS_DEBUG = C:/boost_1.62/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1523 ] Searching for SERIALIZATION_LIBRARY_RELEASE: boost_serialization-mgw53-mt-1_62;boost_serialization-mgw53-mt;boost_serialization-mt-1_62;boost_serialization-mt;boost_serialization
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:362 ]  Boost_LIBRARY_DIR_RELEASE = C:/boost_1.62/lib _boost_LIBRARY_SEARCH_DIRS_RELEASE = C:/boost_1.62/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1565 ] Searching for SERIALIZATION_LIBRARY_DEBUG: boost_serialization-mgw53-mt-d-1_62;boost_serialization-mgw53-mt-d;boost_serialization-mt-d-1_62;boost_serialization-mt-d;boost_serialization-mt;boost_serialization
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:362 ]  Boost_LIBRARY_DIR_DEBUG = C:/boost_1.62/lib _boost_LIBRARY_SEARCH_DIRS_DEBUG = C:/boost_1.62/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH
+-- [ C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1635 ] Boost_FOUND = 1
+-- Boost version: 1.62.0
+-- Found the following Boost libraries:
+--   system
+--   serialization
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/DigiLib/Server/cmake-build-debug

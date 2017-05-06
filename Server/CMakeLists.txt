@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.7)
+project(Server)
+
+set(CMAKE_CXX_STANDARD 11)
+
+set(SOURCE_FILES main.cpp src/M_User.cpp)
+add_executable(Server ${SOURCE_FILES})
+set(BOOST_MANDATORY_COMPONENTS system serialization)
+set(BOOST_ROOT "C:/boost_1.62/")
+set(Boost_DEBUG on)
+find_package(Boost REQUIRED COMPONENTS system serialization)
+include_directories(${Boost_INCLUDE_DIRS})
+target_link_libraries(Server ${Boost_SYSTEM_LIBRARY})
+target_link_libraries(Server ${Boost_SERIALIZATION_LIBRARY})
+target_link_libraries(Server ws2_32)
