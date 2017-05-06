@@ -27,6 +27,7 @@ void M_User :: DisplayUserDump(M_User const userObj, int i)
     os << "Phone : " << userObj.phone << std::endl;
     os <<"----------------------------------------------"<<std::endl;
 }
+
 string M_User::getUsersList(){
 
     try {
@@ -39,4 +40,41 @@ string M_User::getUsersList(){
         std::cerr << e.what()<< std::endl;
     }
 }
+string M_User::ModifyUser(string inputM) {
+    M_User modobj;
+    std::stringstream ss;
+    ss << inputM;
+    boost::archive::text_iarchive ia{ss};
+    ia >> modobj;
+    for(int i=0;i<userData.size();i++){
+        if(modobj.uname == userData[i].uname)
+        {
+            userData.erase(userData.begin()+i);
+            userData.push_back(modobj);
+            return modobj.uname +" Successfully modified";
+        }
+    }
+    return modobj.uname + "User not found";
+}
+string M_User::deleteUser(string inputM) {
+    M_User delobj;
+    std::stringstream ss;4
+    ss << inputM;
+    boost::archive::text_iarchive ia{ss};
+    ia >> delobj;
+    cout<<delobj.uname<<endl;
+    for(int i=0;i<userData.size();i++) {
+        if (delobj.uname == userData[i].uname) {
+            userData.erase(userData.begin() + i);
+            return delobj.uname + " Successfully deleted";
+        }
+    }
+    return delobj.uname + "User not found";
+}
+
+
+
+
+
+
 

@@ -38,7 +38,16 @@ int main() {
                     socket.send(boost::asio::buffer(AllUsers));
                     break;
                 }
-       
+                case 3: {
+                    string modify = userObj.ModifyUser(inputM[1]);
+                    socket.send(boost::asio::buffer(modify));
+                    break;
+                }
+                case 4:{
+                    string delete_user=userObj.deleteUser(inputM[1]);
+                    socket.send(boost::asio::buffer(delete_user));
+                    break;
+                }
             }
         }
     }

@@ -17,6 +17,8 @@ public:
     string addUser(string);
     string getUsersList();
     void DisplayUserDump(M_User const,int);
+    string ModifyUser(string);
+    string deleteUser(string);
 
     friend class boost::serialization::access;
 
