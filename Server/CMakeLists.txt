@@ -3,10 +3,10 @@ project(Server)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp src/M_User.cpp)
+set(SOURCE_FILES main.cpp src/M_User.cpp src/M_Book.cpp )
 add_executable(Server ${SOURCE_FILES})
 set(BOOST_MANDATORY_COMPONENTS system serialization)
-set(BOOST_ROOT "C:/boost_1.62/")
+set(BOOST_ROOT "C:/boost/include/boost-1_63")
 set(Boost_DEBUG on)
 find_package(Boost REQUIRED COMPONENTS system serialization)
 include_directories(${Boost_INCLUDE_DIRS})

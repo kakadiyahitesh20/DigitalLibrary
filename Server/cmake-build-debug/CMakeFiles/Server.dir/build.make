@@ -42,10 +42,10 @@ RM = "C:\Program Files (x86)\JetBrains\CLion 2016.3.5\bin\cmake\bin\cmake.exe" -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\DigiLib\Server
+CMAKE_SOURCE_DIR = E:\DigiLib\DigitalLibrary\Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\DigiLib\Server\cmake-build-debug
+CMAKE_BINARY_DIR = E:\DigiLib\DigitalLibrary\Server\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Server.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/main.cpp.obj: CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/main.cpp.obj: CMakeFiles/Server.dir/includes_CXX.rsp
 CMakeFiles/Server.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\DigiLib\Server\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Server.dir/main.cpp.obj"
-	C:\Qt(2)\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Server.dir\main.cpp.obj -c E:\DigiLib\Server\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\DigiLib\DigitalLibrary\Server\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Server.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Server.dir\main.cpp.obj -c E:\DigiLib\DigitalLibrary\Server\main.cpp
 
 CMakeFiles/Server.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/main.cpp.i"
-	C:\Qt(2)\Tools\mingw530_32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\DigiLib\Server\main.cpp > CMakeFiles\Server.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\DigiLib\DigitalLibrary\Server\main.cpp > CMakeFiles\Server.dir\main.cpp.i
 
 CMakeFiles/Server.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/main.cpp.s"
-	C:\Qt(2)\Tools\mingw530_32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\DigiLib\Server\main.cpp -o CMakeFiles\Server.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\DigiLib\DigitalLibrary\Server\main.cpp -o CMakeFiles\Server.dir\main.cpp.s
 
 CMakeFiles/Server.dir/main.cpp.obj.requires:
 
@@ -84,16 +84,16 @@ CMakeFiles/Server.dir/main.cpp.obj.provides.build: CMakeFiles/Server.dir/main.cp
 CMakeFiles/Server.dir/src/M_User.cpp.obj: CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/src/M_User.cpp.obj: CMakeFiles/Server.dir/includes_CXX.rsp
 CMakeFiles/Server.dir/src/M_User.cpp.obj: ../src/M_User.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\DigiLib\Server\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Server.dir/src/M_User.cpp.obj"
-	C:\Qt(2)\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Server.dir\src\M_User.cpp.obj -c E:\DigiLib\Server\src\M_User.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\DigiLib\DigitalLibrary\Server\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Server.dir/src/M_User.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Server.dir\src\M_User.cpp.obj -c E:\DigiLib\DigitalLibrary\Server\src\M_User.cpp
 
 CMakeFiles/Server.dir/src/M_User.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/M_User.cpp.i"
-	C:\Qt(2)\Tools\mingw530_32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\DigiLib\Server\src\M_User.cpp > CMakeFiles\Server.dir\src\M_User.cpp.i
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\DigiLib\DigitalLibrary\Server\src\M_User.cpp > CMakeFiles\Server.dir\src\M_User.cpp.i
 
 CMakeFiles/Server.dir/src/M_User.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/M_User.cpp.s"
-	C:\Qt(2)\Tools\mingw530_32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\DigiLib\Server\src\M_User.cpp -o CMakeFiles\Server.dir\src\M_User.cpp.s
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\DigiLib\DigitalLibrary\Server\src\M_User.cpp -o CMakeFiles\Server.dir\src\M_User.cpp.s
 
 CMakeFiles/Server.dir/src/M_User.cpp.obj.requires:
 
@@ -106,23 +106,50 @@ CMakeFiles/Server.dir/src/M_User.cpp.obj.provides: CMakeFiles/Server.dir/src/M_U
 CMakeFiles/Server.dir/src/M_User.cpp.obj.provides.build: CMakeFiles/Server.dir/src/M_User.cpp.obj
 
 
+CMakeFiles/Server.dir/src/M_Book.cpp.obj: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/src/M_Book.cpp.obj: CMakeFiles/Server.dir/includes_CXX.rsp
+CMakeFiles/Server.dir/src/M_Book.cpp.obj: ../src/M_Book.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\DigiLib\DigitalLibrary\Server\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Server.dir/src/M_Book.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Server.dir\src\M_Book.cpp.obj -c E:\DigiLib\DigitalLibrary\Server\src\M_Book.cpp
+
+CMakeFiles/Server.dir/src/M_Book.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/M_Book.cpp.i"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\DigiLib\DigitalLibrary\Server\src\M_Book.cpp > CMakeFiles\Server.dir\src\M_Book.cpp.i
+
+CMakeFiles/Server.dir/src/M_Book.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/M_Book.cpp.s"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\DigiLib\DigitalLibrary\Server\src\M_Book.cpp -o CMakeFiles\Server.dir\src\M_Book.cpp.s
+
+CMakeFiles/Server.dir/src/M_Book.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Server.dir/src/M_Book.cpp.obj.requires
+
+CMakeFiles/Server.dir/src/M_Book.cpp.obj.provides: CMakeFiles/Server.dir/src/M_Book.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/src/M_Book.cpp.obj.provides.build
+.PHONY : CMakeFiles/Server.dir/src/M_Book.cpp.obj.provides
+
+CMakeFiles/Server.dir/src/M_Book.cpp.obj.provides.build: CMakeFiles/Server.dir/src/M_Book.cpp.obj
+
+
 # Object files for target Server
 Server_OBJECTS = \
 "CMakeFiles/Server.dir/main.cpp.obj" \
-"CMakeFiles/Server.dir/src/M_User.cpp.obj"
+"CMakeFiles/Server.dir/src/M_User.cpp.obj" \
+"CMakeFiles/Server.dir/src/M_Book.cpp.obj"
 
 # External object files for target Server
 Server_EXTERNAL_OBJECTS =
 
 Server.exe: CMakeFiles/Server.dir/main.cpp.obj
 Server.exe: CMakeFiles/Server.dir/src/M_User.cpp.obj
+Server.exe: CMakeFiles/Server.dir/src/M_Book.cpp.obj
 Server.exe: CMakeFiles/Server.dir/build.make
-Server.exe: C:/boost_1.62/lib/libboost_system-mgw53-mt-d-1_62.a
-Server.exe: C:/boost_1.62/lib/libboost_serialization-mgw53-mt-d-1_62.a
+Server.exe: C:/boost/lib/libboost_system-mgw63-mt-d-1_63.a
+Server.exe: C:/boost/lib/libboost_serialization-mgw63-mt-d-1_63.a
 Server.exe: CMakeFiles/Server.dir/linklibs.rsp
 Server.exe: CMakeFiles/Server.dir/objects1.rsp
 Server.exe: CMakeFiles/Server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\DigiLib\Server\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Server.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\DigiLib\DigitalLibrary\Server\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Server.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Server.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -132,6 +159,7 @@ CMakeFiles/Server.dir/build: Server.exe
 
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/main.cpp.obj.requires
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/src/M_User.cpp.obj.requires
+CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/src/M_Book.cpp.obj.requires
 
 .PHONY : CMakeFiles/Server.dir/requires
 
@@ -140,6 +168,6 @@ CMakeFiles/Server.dir/clean:
 .PHONY : CMakeFiles/Server.dir/clean
 
 CMakeFiles/Server.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\DigiLib\Server E:\DigiLib\Server E:\DigiLib\Server\cmake-build-debug E:\DigiLib\Server\cmake-build-debug E:\DigiLib\Server\cmake-build-debug\CMakeFiles\Server.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\DigiLib\DigitalLibrary\Server E:\DigiLib\DigitalLibrary\Server E:\DigiLib\DigitalLibrary\Server\cmake-build-debug E:\DigiLib\DigitalLibrary\Server\cmake-build-debug E:\DigiLib\DigitalLibrary\Server\cmake-build-debug\CMakeFiles\Server.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Server.dir/depend
 

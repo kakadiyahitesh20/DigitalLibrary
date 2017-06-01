@@ -19,7 +19,9 @@ public:
     void DisplayUserDump(M_User const,int);
     string ModifyUser(string);
     string deleteUser(string);
-
+    bool addBorrowedBook(string,int);
+    bool removeBorrowedBook(string,int);
+    vector<int> borrowedUser(string);
     friend class boost::serialization::access;
 
     template<typename Archive>
@@ -30,10 +32,12 @@ public:
         ar & email;
         ar & phone;
         ar & uname;
+        ar & booksBorrowed;
     }
 
 private:
     string name,email,phone,uname;
+    vector<int> booksBorrowed;
 protected:
     vector<M_User> userData;
 };

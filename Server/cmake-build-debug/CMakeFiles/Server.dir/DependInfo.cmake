@@ -4,14 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/DigiLib/Server/main.cpp" "E:/DigiLib/Server/cmake-build-debug/CMakeFiles/Server.dir/main.cpp.obj"
-  "E:/DigiLib/Server/src/M_User.cpp" "E:/DigiLib/Server/cmake-build-debug/CMakeFiles/Server.dir/src/M_User.cpp.obj"
+  "E:/DigiLib/DigitalLibrary/Server/main.cpp" "E:/DigiLib/DigitalLibrary/Server/cmake-build-debug/CMakeFiles/Server.dir/main.cpp.obj"
+  "E:/DigiLib/DigitalLibrary/Server/src/M_Book.cpp" "E:/DigiLib/DigitalLibrary/Server/cmake-build-debug/CMakeFiles/Server.dir/src/M_Book.cpp.obj"
+  "E:/DigiLib/DigitalLibrary/Server/src/M_User.cpp" "E:/DigiLib/DigitalLibrary/Server/cmake-build-debug/CMakeFiles/Server.dir/src/M_User.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "C:/boost_1.62/include/boost-1_62"
+  "C:/boost/include/boost-1_63"
   )
 
 # Targets to which this target links.

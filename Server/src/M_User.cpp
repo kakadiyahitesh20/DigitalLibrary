@@ -58,11 +58,10 @@ string M_User::ModifyUser(string inputM) {
 }
 string M_User::deleteUser(string inputM) {
     M_User delobj;
-    std::stringstream ss;4
+    std::stringstream ss;
     ss << inputM;
     boost::archive::text_iarchive ia{ss};
     ia >> delobj;
-    cout<<delobj.uname<<endl;
     for(int i=0;i<userData.size();i++) {
         if (delobj.uname == userData[i].uname) {
             userData.erase(userData.begin() + i);
@@ -72,9 +71,54 @@ string M_User::deleteUser(string inputM) {
     return delobj.uname + "User not found";
 }
 
+bool M_User::addBorrowedBook(string uname,int book_SN){
 
+    try {
+        cout<<userData.size();
+        cout<<uname;
+        for(int i=0;i<userData.size();i++){
+            if(userData[i].uname == uname)
+            {
+                userData[i].booksBorrowed.push_back(book_SN);
+                return true;
+            }
+        }
+        return false;
 
+    }catch (std :: exception& e){
+        std::cerr << e.what()<< std::endl;
+    }
+}
 
+bool M_User::removeBorrowedBook(string uname,int book_SN){
 
+    try {
+        cout<<userData.size();
+        for(int i=0;i<userData.size();i++){
+            if(userData[i].uname == uname) {
+                vector<int> tmp =  userData[i].booksBorrowed;
+                for (int j = 0; j < tmp.size(); j++) {
+                    if (tmp[j] == book_SN) {
+                        userData[i].booksBorrowed.erase(userData[i].booksBorrowed.begin() + j);
+                        return true;
+                    }
+                }
+            }
 
+        }
+        return false;
 
+    }catch (std :: exception& e){
+        std::cerr << e.what()<< std::endl;
+    }
+}
+
+vector<int> M_User::borrowedUser(string inputM) {
+    M_User borrowobj;
+    vector<M_User> Dump;
+    for(int i=0;i<userData.size();i++) {
+        if (userData[i].uname == inputM) {
+           return userData[i].booksBorrowed;
+        }
+    }
+}

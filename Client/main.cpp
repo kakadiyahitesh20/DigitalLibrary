@@ -8,6 +8,9 @@
 #include <boost/asio/ip/tcp.hpp>
 #include <cstring>
 
+//#include <boost/test/unit_test.hpp>
+
+
 
 typedef boost::asio::ip::tcp asiotcp;
 int main(int argc, char *argv[]) {
@@ -25,7 +28,9 @@ int main(int argc, char *argv[]) {
         socket.send(boost::asio::buffer(message));
         User obj_User;
         M_User IP_user;
+        M_Book IP_Book;
         IP_user.ipaddress(argv[1]);
+        IP_Book.ipaddress(argv[1]);
         obj_User.DisplayMenu();
 
     }

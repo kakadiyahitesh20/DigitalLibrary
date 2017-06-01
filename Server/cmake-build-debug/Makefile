@@ -47,10 +47,10 @@ RM = "C:\Program Files (x86)\JetBrains\CLion 2016.3.5\bin\cmake\bin\cmake.exe" -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\DigiLib\Server
+CMAKE_SOURCE_DIR = E:\DigiLib\DigitalLibrary\Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\DigiLib\Server\cmake-build-debug
+CMAKE_BINARY_DIR = E:\DigiLib\DigitalLibrary\Server\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\DigiLib\Server\cmake-build-debug\CMakeFiles E:\DigiLib\Server\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\DigiLib\DigitalLibrary\Server\cmake-build-debug\CMakeFiles E:\DigiLib\DigitalLibrary\Server\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\DigiLib\Server\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\DigiLib\DigitalLibrary\Server\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,6 +149,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/M_Book.obj: src/M_Book.cpp.obj
+
+.PHONY : src/M_Book.obj
+
+# target to build an object file
+src/M_Book.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/src/M_Book.cpp.obj
+.PHONY : src/M_Book.cpp.obj
+
+src/M_Book.i: src/M_Book.cpp.i
+
+.PHONY : src/M_Book.i
+
+# target to preprocess a source file
+src/M_Book.cpp.i:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/src/M_Book.cpp.i
+.PHONY : src/M_Book.cpp.i
+
+src/M_Book.s: src/M_Book.cpp.s
+
+.PHONY : src/M_Book.s
+
+# target to generate assembly for a file
+src/M_Book.cpp.s:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/src/M_Book.cpp.s
+.PHONY : src/M_Book.cpp.s
+
 src/M_User.obj: src/M_User.cpp.obj
 
 .PHONY : src/M_User.obj
@@ -188,6 +215,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/M_Book.obj
+	@echo ... src/M_Book.i
+	@echo ... src/M_Book.s
 	@echo ... src/M_User.obj
 	@echo ... src/M_User.i
 	@echo ... src/M_User.s

@@ -13,7 +13,7 @@
 #include <sstream>
 using namespace std;
 static char *Cptr;
-class M_User
+class  M_User
 {
 public:
     void adduser();
@@ -23,6 +23,7 @@ public:
     void DisplayUserdump(M_User&,int);
     void DisplayUsers();
     void modifyUser();
+    string UsersBorrowed();
     friend class boost::serialization::access;
 
     template<typename Archive>
@@ -33,10 +34,12 @@ public:
         ar & email;
         ar & phone;
         ar & uname;
+        ar & booksBorrowed;
     }
 
 private:
     string name,uname,email,phone;
+    vector<int> booksBorrowed;
 
 protected:
     vector<M_User> userData;

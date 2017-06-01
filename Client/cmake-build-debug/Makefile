@@ -47,10 +47,10 @@ RM = "C:\Program Files (x86)\JetBrains\CLion 2016.3.5\bin\cmake\bin\cmake.exe" -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\DigiLib\Client
+CMAKE_SOURCE_DIR = E:\DigiLib\DigitalLibrary\Client
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\DigiLib\Client\cmake-build-debug
+CMAKE_BINARY_DIR = E:\DigiLib\DigitalLibrary\Client\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\DigiLib\Client\cmake-build-debug\CMakeFiles E:\DigiLib\Client\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\DigiLib\DigitalLibrary\Client\cmake-build-debug\CMakeFiles E:\DigiLib\DigitalLibrary\Client\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\DigiLib\Client\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\DigiLib\DigitalLibrary\Client\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Client
+# Target rules for targets named ClientMain
 
 # Build rule for target.
-Client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 Client
-.PHONY : Client
+ClientMain: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 ClientMain
+.PHONY : ClientMain
 
 # fast build rule for target.
-Client/fast:
-	$(MAKE) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/build
-.PHONY : Client/fast
+ClientMain/fast:
+	$(MAKE) -f CMakeFiles\ClientMain.dir\build.make CMakeFiles/ClientMain.dir/build
+.PHONY : ClientMain/fast
 
 main.obj: main.cpp.obj
 
@@ -128,7 +128,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\ClientMain.dir\build.make CMakeFiles/ClientMain.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -137,7 +137,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\ClientMain.dir\build.make CMakeFiles/ClientMain.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -146,8 +146,35 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\ClientMain.dir\build.make CMakeFiles/ClientMain.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/M_Book.obj: src/M_Book.cpp.obj
+
+.PHONY : src/M_Book.obj
+
+# target to build an object file
+src/M_Book.cpp.obj:
+	$(MAKE) -f CMakeFiles\ClientMain.dir\build.make CMakeFiles/ClientMain.dir/src/M_Book.cpp.obj
+.PHONY : src/M_Book.cpp.obj
+
+src/M_Book.i: src/M_Book.cpp.i
+
+.PHONY : src/M_Book.i
+
+# target to preprocess a source file
+src/M_Book.cpp.i:
+	$(MAKE) -f CMakeFiles\ClientMain.dir\build.make CMakeFiles/ClientMain.dir/src/M_Book.cpp.i
+.PHONY : src/M_Book.cpp.i
+
+src/M_Book.s: src/M_Book.cpp.s
+
+.PHONY : src/M_Book.s
+
+# target to generate assembly for a file
+src/M_Book.cpp.s:
+	$(MAKE) -f CMakeFiles\ClientMain.dir\build.make CMakeFiles/ClientMain.dir/src/M_Book.cpp.s
+.PHONY : src/M_Book.cpp.s
 
 src/M_User.obj: src/M_User.cpp.obj
 
@@ -155,7 +182,7 @@ src/M_User.obj: src/M_User.cpp.obj
 
 # target to build an object file
 src/M_User.cpp.obj:
-	$(MAKE) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/src/M_User.cpp.obj
+	$(MAKE) -f CMakeFiles\ClientMain.dir\build.make CMakeFiles/ClientMain.dir/src/M_User.cpp.obj
 .PHONY : src/M_User.cpp.obj
 
 src/M_User.i: src/M_User.cpp.i
@@ -164,7 +191,7 @@ src/M_User.i: src/M_User.cpp.i
 
 # target to preprocess a source file
 src/M_User.cpp.i:
-	$(MAKE) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/src/M_User.cpp.i
+	$(MAKE) -f CMakeFiles\ClientMain.dir\build.make CMakeFiles/ClientMain.dir/src/M_User.cpp.i
 .PHONY : src/M_User.cpp.i
 
 src/M_User.s: src/M_User.cpp.s
@@ -173,7 +200,7 @@ src/M_User.s: src/M_User.cpp.s
 
 # target to generate assembly for a file
 src/M_User.cpp.s:
-	$(MAKE) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/src/M_User.cpp.s
+	$(MAKE) -f CMakeFiles\ClientMain.dir\build.make CMakeFiles/ClientMain.dir/src/M_User.cpp.s
 .PHONY : src/M_User.cpp.s
 
 src/User.obj: src/User.cpp.obj
@@ -182,7 +209,7 @@ src/User.obj: src/User.cpp.obj
 
 # target to build an object file
 src/User.cpp.obj:
-	$(MAKE) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/src/User.cpp.obj
+	$(MAKE) -f CMakeFiles\ClientMain.dir\build.make CMakeFiles/ClientMain.dir/src/User.cpp.obj
 .PHONY : src/User.cpp.obj
 
 src/User.i: src/User.cpp.i
@@ -191,7 +218,7 @@ src/User.i: src/User.cpp.i
 
 # target to preprocess a source file
 src/User.cpp.i:
-	$(MAKE) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/src/User.cpp.i
+	$(MAKE) -f CMakeFiles\ClientMain.dir\build.make CMakeFiles/ClientMain.dir/src/User.cpp.i
 .PHONY : src/User.cpp.i
 
 src/User.s: src/User.cpp.s
@@ -200,7 +227,7 @@ src/User.s: src/User.cpp.s
 
 # target to generate assembly for a file
 src/User.cpp.s:
-	$(MAKE) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/src/User.cpp.s
+	$(MAKE) -f CMakeFiles\ClientMain.dir\build.make CMakeFiles/ClientMain.dir/src/User.cpp.s
 .PHONY : src/User.cpp.s
 
 # Help Target
@@ -209,12 +236,15 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... Client
+	@echo ... ClientMain
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/M_Book.obj
+	@echo ... src/M_Book.i
+	@echo ... src/M_Book.s
 	@echo ... src/M_User.obj
 	@echo ... src/M_User.i
 	@echo ... src/M_User.s

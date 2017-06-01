@@ -1,8 +1,24 @@
-"C:\Program Files (x86)\JetBrains\CLion 2016.3.5\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\DigiLib\Client
--- Boost version: 1.62.0
+"C:\Program Files (x86)\JetBrains\CLion 2016.3.5\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\DigiLib\DigitalLibrary\Client
+CMake Warning at C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:744 (message):
+  Imported targets not available for Boost version 106300
+Call Stack (most recent call first):
+  C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:848 (_Boost_COMPONENT_DEPENDENCIES)
+  C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1435 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:8 (find_package)
+
+
+CMake Warning at C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:744 (message):
+  Imported targets not available for Boost version 106300
+Call Stack (most recent call first):
+  C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:848 (_Boost_COMPONENT_DEPENDENCIES)
+  C:/Program Files (x86)/JetBrains/CLion 2016.3.5/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1435 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:8 (find_package)
+
+
+-- Boost version: 1.63.0
 -- Found the following Boost libraries:
 --   system
 --   serialization
 -- Configuring done
 -- Generating done
--- Build files have been written to: E:/DigiLib/Client/cmake-build-debug
+-- Build files have been written to: E:/DigiLib/DigitalLibrary/Client/cmake-build-debug
