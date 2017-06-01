@@ -1,0 +1,1 @@
+set(AM_OLD_COMPILE_SETTINGS "QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB ~~~ E:/DigiLib/Client/cmake-build-debug;E:/DigiLib/Client;C:/boost_1.62/include/boost-1_62;C:/Qt_5.6/5.6/mingw49_32/include;C:/Qt_5.6/5.6/mingw49_32/include/QtWidgets;C:/Qt_5.6/5.6/mingw49_32/include/QtGui;C:/Qt_5.6/5.6/mingw49_32/include/QtCore;C:/Qt_5.6/5.6/mingw49_32/./mkspecs/win32-g++ ~~~  ~~~ FALSE ~~~ ")

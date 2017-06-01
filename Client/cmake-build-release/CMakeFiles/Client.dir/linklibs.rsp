@@ -1,0 +1,1 @@
+C:/boost_1.62/lib/libboost_system-mgw53-mt-1_62.a C:/boost_1.62/lib/libboost_serialization-mgw53-mt-1_62.a -lws2_32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
