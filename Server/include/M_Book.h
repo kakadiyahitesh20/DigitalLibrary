@@ -38,6 +38,11 @@ public:
         ar & borrowed;
     }
 
+    int borrowedBook(string);
+    string getBorrowedList();
+    int returnBook(string);
+    string getbook(vector<int>);
+
 private:
     int s_no = 0;
     bool borrowed=false;

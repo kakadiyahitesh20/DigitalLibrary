@@ -76,4 +76,92 @@ string M_Book::deleteBook(string inputM) {
     }
     return delobj.s_no + "Book not found";
 }
+int M_Book::borrowedBook(string inputM) {
+    try {
+        //M_User userObj;
+        M_Book borrowObj;
+        std::stringstream ss;
+        ss << inputM;
+        boost::archive::text_iarchive ia{ss};
+        ia >> borrowObj;
+        for(int i=0;i<bookData.size();i++){
+            if(borrowObj.name == bookData[i].name) {
+                if(!bookData[i].borrowed) {
+                    bookData[i].borrowed = true;
+                    return bookData[i].s_no;
+                }
+            }
+        }
+        return 0;
+    }catch (std :: exception& e){
+        std::cerr << e.what()<< std::endl;
+    }
+}
+string M_Book::getBorrowedList(){
 
+    try {
+        vector<M_Book> borrowed;
+        std::stringstream ss;
+        boost::archive::text_oarchive oa{ss};
+        for(int i=0;i<bookData.size();i++){
+            if(bookData[i].borrowed == true)
+            {
+                borrowed.push_back(bookData[i]);
+            }
+        }
+        for (int i = 0; i < borrowed.size(); i++) {
+            DisplayBookDump(borrowed[i],i);
+        }
+        oa & borrowed;
+
+        std::string output = ss.str();
+        return output;
+    }catch (std :: exception& e){
+        std::cerr << e.what()<< std::endl;
+    }
+}
+
+int M_Book::returnBook(string inputM) {
+    try {
+        //M_User userObj;
+        M_Book returnObj;
+        std::stringstream ss;
+        ss << inputM;
+        boost::archive::text_iarchive ia{ss};
+        ia >> returnObj;
+        for(int i=0;i<bookData.size();i++){
+            if(returnObj.name == bookData[i].name) {
+                if(bookData[i].borrowed == true) {
+                    bookData[i].borrowed = false;
+                    return bookData[i].s_no;
+                }
+            }
+        }
+        return 0;
+    }catch (std :: exception& e){
+        std::cerr << e.what()<< std::endl;
+    }
+}
+
+string M_Book::getbook(vector<int> booksNo)
+{
+    vector<M_Book> dump;
+    std::stringstream ss;
+    boost::archive::text_oarchive oa{ss};
+    for(int i=0;i<booksNo.size();i++) {
+        for (int j = 0; j < bookData.size(); j++){
+            if (booksNo[i] == bookData[j].s_no) {
+                if (bookData[j].borrowed == true) {
+                    dump.push_back(bookData[j]);
+                }
+            }
+        }
+    }
+    for (int i = 0; i < dump.size(); i++) {
+        DisplayBookDump(dump[i],i);
+    }
+    oa & dump;
+
+    std::string output = ss.str();
+    return output;
+}
