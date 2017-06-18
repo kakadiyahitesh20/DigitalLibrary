@@ -6,6 +6,10 @@
 #include"../include/M_Book.h"
 using namespace std;
 
+/* ------------------------------------------------
+For user class display menu operation
+------------------------------------------------------  */
+
 class User
 {
 public:

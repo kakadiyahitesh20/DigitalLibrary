@@ -11,6 +11,11 @@
 #include <boost/archive/text_oarchive.hpp>
 #include <boost/archive/text_iarchive.hpp>
 using namespace std;
+
+/* ------------------------------------------------
+For user class method operation at server side
+------------------------------------------------------  */
+
 class M_User
 {
 public:

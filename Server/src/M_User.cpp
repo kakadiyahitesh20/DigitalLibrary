@@ -1,5 +1,10 @@
 #include "../include/M_User.h"
 
+/* ------------------------------------------------
+Add new user at server side
+Return : msg
+------------------------------------------------------  */
+
 string M_User::addUser(string inputM) {
     M_User obj;
     std::stringstream ss;
@@ -16,6 +21,10 @@ string M_User::addUser(string inputM) {
 
 }
 
+/* ------------------------------------------------
+Display user at server side
+------------------------------------------------------  */
+
 void M_User :: DisplayUserDump(M_User const userObj, int i)
 {
     std::ostream &os = std::cout;
@@ -27,6 +36,10 @@ void M_User :: DisplayUserDump(M_User const userObj, int i)
     os << "Phone : " << userObj.phone << std::endl;
     os <<"----------------------------------------------"<<std::endl;
 }
+
+/* ------------------------------------------------
+Get user list at server side
+------------------------------------------------------  */
 
 string M_User::getUsersList(){
 
@@ -40,6 +53,12 @@ string M_User::getUsersList(){
         std::cerr << e.what()<< std::endl;
     }
 }
+
+/* ------------------------------------------------
+Modify user extract info at server side
+Return : msg
+------------------------------------------------------  */
+
 string M_User::ModifyUser(string inputM) {
     M_User modobj;
     std::stringstream ss;
@@ -56,6 +75,12 @@ string M_User::ModifyUser(string inputM) {
     }
     return modobj.uname + "User not found";
 }
+
+/* ------------------------------------------------
+Remove user extract info at server side
+Return : msg
+------------------------------------------------------  */
+
 string M_User::deleteUser(string inputM) {
     M_User delobj;
     std::stringstream ss;
@@ -70,6 +95,10 @@ string M_User::deleteUser(string inputM) {
     }
     return delobj.uname + "User not found";
 }
+
+/* ------------------------------------------------
+Add borrow book extract info at server side
+------------------------------------------------------  */
 
 bool M_User::addBorrowedBook(string uname,int book_SN){
 
@@ -89,6 +118,11 @@ bool M_User::addBorrowedBook(string uname,int book_SN){
         std::cerr << e.what()<< std::endl;
     }
 }
+
+/* ------------------------------------------------
+Remove borrow book extract info at server side
+Return : msg
+------------------------------------------------------  */
 
 bool M_User::removeBorrowedBook(string uname,int book_SN){
 

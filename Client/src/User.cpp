@@ -1,5 +1,9 @@
 #include "../include/User.h"
 
+/* ------------------------------------------------
+Display Menu of user operation
+------------------------------------------------------  */
+
 void User::DisplayMenu()
 {
     int choice=50;

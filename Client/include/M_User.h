@@ -13,6 +13,12 @@
 #include <sstream>
 using namespace std;
 static char *Cptr;
+
+
+/* ------------------------------------------------
+User class contains all methods to user operation
+------------------------------------------------------  */
+
 class  M_User
 {
 public:

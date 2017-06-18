@@ -4,6 +4,11 @@ typedef boost::asio::ip::tcp asiotcp;
 void M_User::ipaddress(char *Copy) {
         Cptr=Copy;
 }
+
+/* ------------------------------------------------
+Display user info
+------------------------------------------------------  */
+
 void M_User::DisplayUserdump(M_User& output,int i) {
 
         ostream &os = cout;
@@ -15,6 +20,10 @@ void M_User::DisplayUserdump(M_User& output,int i) {
         os << "\tPhone:    " << output.phone<<endl;
         os << "******************************************" << std::endl;
 }
+
+/* ------------------------------------------------
+Send user data to server
+------------------------------------------------------  */
 
 string const M_User::send2Server(string output) {
 
@@ -30,6 +39,10 @@ string const M_User::send2Server(string output) {
         string const inputmessage(recv_buf.data(), received_bytes);
         return inputmessage;
 }
+
+/* ------------------------------------------------
+Add new user
+------------------------------------------------------  */
 
 void M_User::adduser() {
         try {
@@ -57,6 +70,11 @@ void M_User::adduser() {
         }
 }
 
+/* ------------------------------------------------
+Remove user by username
+Variables: Must passed username
+------------------------------------------------------  */
+
 void M_User::deleteUser() {
     stringstream ss;
     M_User delete_User;
@@ -70,6 +88,12 @@ void M_User::deleteUser() {
     string res=delete_User.send2Server(output);
     cout<<"Server->"<<res<<endl;
 }
+
+/* ------------------------------------------------
+Modify user by username
+Variables: Must passed username and other info
+------------------------------------------------------  */
+
 void M_User::modifyUser() {
         try {
                 stringstream ss;
@@ -97,6 +121,11 @@ void M_User::modifyUser() {
         }
 
 }
+
+/* ------------------------------------------------
+Display user extract info
+------------------------------------------------------  */
+
 void M_User::DisplayUsers() {
         try {
                 stringstream ss;
@@ -119,6 +148,12 @@ void M_User::DisplayUsers() {
                 cerr << e.what() << endl;
         }
 }
+
+/* ------------------------------------------------
+Display borrow book by username
+Variable : Must passed username
+------------------------------------------------------  */
+
 string M_User::UsersBorrowed()  {
         try {
                 stringstream ss;

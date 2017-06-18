@@ -4,6 +4,13 @@ typedef boost::asio::ip::tcp asiotcp;
 void M_Book::ipaddress(char *Copy) {
     Cptr_Book=Copy;
 }
+
+/* ------------------------------------------------
+Display book information
+Variables:
+Return: book info, or an error if appropriate
+------------------------------------------------------  */
+
 void M_Book::DisplayBookdump(M_Book& output,int i) {
 
     ostream &os = cout;
@@ -17,6 +24,12 @@ void M_Book::DisplayBookdump(M_Book& output,int i) {
     os << "\tCategory:    " << output.category<<endl;
     os << "******************************************" << std::endl;
 }
+
+/* ------------------------------------------------
+Send bookinfor to server
+Variables: passed info to send server
+Return: book info, or an error if appropriate
+------------------------------------------------------  */
 
 string const M_Book::send2Server(string output) {
 
@@ -32,6 +45,11 @@ string const M_Book::send2Server(string output) {
     string const inputmessage(recv_buf.data(), received_bytes);
     return inputmessage;
 }
+
+/* ------------------------------------------------
+Add new book entry
+------------------------------------------------------  */
+
 
 void M_Book::addBook() {
     try {
@@ -62,6 +80,11 @@ void M_Book::addBook() {
 }
 
 
+/* ------------------------------------------------
+Remove book by s_no
+Variables: Must passed s_no
+------------------------------------------------------  */
+
 void M_Book::deleteBook() {
     stringstream ss;
     M_Book delete_Book;
@@ -75,6 +98,12 @@ void M_Book::deleteBook() {
     string res=delete_Book.send2Server(output);
     cout<<"Server->"<<res<<endl;
 }
+
+/* ------------------------------------------------
+Modify book by s_no
+Variables: Must passed s_no
+------------------------------------------------------  */
+
 void M_Book::modifyBook() {
     try {
         stringstream ss;
@@ -106,6 +135,10 @@ void M_Book::modifyBook() {
 
 }
 
+/* ------------------------------------------------
+For display book info extract data
+------------------------------------------------------  */
+
 void M_Book::DisplayBooks() {
     try {
         stringstream ss;
@@ -128,6 +161,13 @@ void M_Book::DisplayBooks() {
         cerr << e.what() << endl;
     }
 }
+
+
+/* ------------------------------------------------
+Borrow book by username
+Variables: Must passed username,book name
+------------------------------------------------------  */
+
 void M_Book::borrowedBook() {
     try {
         stringstream ss;
@@ -153,6 +193,10 @@ void M_Book::borrowedBook() {
     }
 }
 
+/* ------------------------------------------------
+Display Borrow book extract info
+------------------------------------------------------  */
+
 void M_Book::DisplayBorrowed(){
     try {
         stringstream ss;
@@ -175,6 +219,12 @@ void M_Book::DisplayBorrowed(){
         cerr << e.what() << endl;
     }
 }
+
+/* ------------------------------------------------
+Return book by username
+Variables: Must passed username,book name
+------------------------------------------------------  */
+
 void M_Book::returnBook() {
     try {
         stringstream ss;

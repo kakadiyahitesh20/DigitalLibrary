@@ -13,6 +13,11 @@
 #include"../include/M_User.h"
 
 using namespace std;
+
+/* ------------------------------------------------
+For book class method operation at server side
+------------------------------------------------------  */
+
 class M_Book
 {
 public:

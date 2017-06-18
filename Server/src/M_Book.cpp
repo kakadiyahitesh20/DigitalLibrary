@@ -1,5 +1,10 @@
 #include "../include/M_Book.h"
 
+/* ------------------------------------------------
+Add new book entry server side
+Return : msg
+------------------------------------------------------  */
+
 
 string M_Book::addBook(string inputM) {
     M_Book obj_Book;
@@ -18,6 +23,10 @@ string M_Book::addBook(string inputM) {
 
 }
 
+/* ------------------------------------------------
+Display book server side
+------------------------------------------------------  */
+
 void M_Book :: DisplayBookDump(M_Book const bookObj, int i)
 {
     ostream &os = cout;
@@ -32,6 +41,9 @@ void M_Book :: DisplayBookDump(M_Book const bookObj, int i)
     os << "******************************************" << std::endl;
 }
 
+/* ------------------------------------------------
+Display book list extract list info
+------------------------------------------------------  */
 
 string M_Book::getBookList(){
 
@@ -61,6 +73,12 @@ string M_Book::ModifyBook(string inputM) {
     }
     return modobj.s_no + "Book not found";
 }
+
+/* ------------------------------------------------
+Modify book entry server side
+Return : msg
+------------------------------------------------------  */
+
 string M_Book::deleteBook(string inputM) {
     M_Book delobj;
     std::stringstream ss;
@@ -76,6 +94,11 @@ string M_Book::deleteBook(string inputM) {
     }
     return delobj.s_no + "Book not found";
 }
+
+/* ------------------------------------------------
+Borrow book extract info at server side
+------------------------------------------------------  */
+
 int M_Book::borrowedBook(string inputM) {
     try {
         //M_User userObj;
@@ -97,6 +120,11 @@ int M_Book::borrowedBook(string inputM) {
         std::cerr << e.what()<< std::endl;
     }
 }
+
+/* ------------------------------------------------
+Borrow book list extract info at server side
+------------------------------------------------------  */
+
 string M_Book::getBorrowedList(){
 
     try {
@@ -121,6 +149,10 @@ string M_Book::getBorrowedList(){
     }
 }
 
+/* ------------------------------------------------
+Return book extract info at server side
+------------------------------------------------------  */
+
 int M_Book::returnBook(string inputM) {
     try {
         //M_User userObj;
@@ -142,6 +174,10 @@ int M_Book::returnBook(string inputM) {
         std::cerr << e.what()<< std::endl;
     }
 }
+
+/* ------------------------------------------------
+Get book extract info at server side
+------------------------------------------------------  */
 
 string M_Book::getbook(vector<int> booksNo)
 {

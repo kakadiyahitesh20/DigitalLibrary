@@ -9,6 +9,11 @@
 #include<boost/algorithm/string.hpp>
 using namespace std;
 
+
+/* ------------------------------------------------
+Main method to contain client and server side initialization
+------------------------------------------------------  */
+
 int main() {
     bool loop=true;
     try

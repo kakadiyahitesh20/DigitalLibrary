@@ -16,6 +16,12 @@
 
 using namespace std;
 static char *Cptr_Book;
+
+
+/* ------------------------------------------------
+Books class contains all methods to book operations
+------------------------------------------------------  */
+
 class  M_Book
 {
 public:
